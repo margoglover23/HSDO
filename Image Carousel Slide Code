@@ -1,0 +1,59 @@
+<div class="container">
+
+
+  
+  	<!-- thumb navigation carousel -->
+    <div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">
+        
+            <!-- thumb navigation carousel items -->
+    </div>
+  
+  
+    
+    <div class="row">
+        <div class="col-md-12" id="slider">
+            
+                <div class="col-md-12" id="carousel-bounding-box">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item" data-slide-number="0">
+                                <img src="https://katieleamon.com/wp-content/uploads/2017/03/Welcome-Discount-Homepage-EXTENDED.jpg" width="1203" height="800" style="PADDING-LEFT: 26px ; class="img-responsive">
+                      </div>
+                            <div class="item" data-slide-number="1">
+                              <img src="https://katieleamon.com/wp-content/uploads/2017/02/Home-Page-for-Handshake.jpg" width="1203" height="800" style="PADDING-LEFT: 26px ; class="img-responsive">
+                            </div>
+                           
+                            <div class="item" data-slide-number="2">
+                              <img src="https://katieleamon.com/wp-content/uploads/2017/02/Home-Page-for-Handshake-03.jpg" width="1203" height="800" style="PADDING-LEFT: 26px ; class="img-responsive">
+                              
+                            </div>
+                            <div class="item" data-slide-number="3">
+                              <img src="https://katieleamon.com/wp-content/uploads/2017/02/Home-Page-for-Handshake-04.jpg" width="1203" height="800" style="PADDING-LEFT: 26px ; class="img-responsive">
+                              
+                            </div>
+                            
+                            <div class="item" data-slide-number="4">
+                              <img src="https://katieleamon.com/wp-content/uploads/2017/02/Home-Page-for-Handshake-05.jpg" width="1203" height="800" style="PADDING-LEFT: 26px ; class="img-responsive">
+                              </div>
+                            
+                
+                              
+                            </div>
+                            
+                        </div>
+                        <!-- main slider carousel nav controls --> 
+                        
+                    
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                 
+                       
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <!--/main slider carousel-->
+
