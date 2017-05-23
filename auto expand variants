@@ -1,0 +1,6 @@
+/* 
+   Change the default cart view on the checkout screen in HSDO to auto expand variants in the table. Enter in the Javascript
+   field in Apperance Settings. 
+*/
+
+setTimeout(function() { $("#order-cart table tr .expand-wrapper span.toggle i.icon-table").click(); }, 10000);
