@@ -1,0 +1,171 @@
+//* Insert the below into the Homepage Promo Message box, then also insert the Hide Manufacturers snippet in HSDO Apperance Settings *//
+??/ Note you'll need to replace the image URLs and can adjust the rows and columns by rearraging the number of columns in each gridbox div *??
+
+
+final craftspring grid layout 
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.3.1/gridlex.min.css">
+</head>
+
+<body>
+    <style>
+    
+ 
+    
+    .grid-noGutter-noBottom {
+     padding: 15px;
+    }
+    
+    
+</style>
+    
+<div class="grid-noGutter-noBottom">
+     <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92061">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/sail_away_thumbnail_2.jpg?15540286657790021096">
+        </a>
+    </div>
+    <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=93407">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/down_by_the_bay_thumbnail_new.jpg?15540286657790021096">
+        </a>
+    </div>
+     <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92055">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/hawaii_5.0_thumbnails_santa.jpg?15540286657790021096">
+        </a>
+    </div>
+
+    <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92049">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/underwater_thumbnail_octoblue.jpg?3823635348305638436">
+        </a>
+    </div>
+    </div>
+
+<div class="grid-noGutter-noBottom">
+
+  <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92063">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/dinos_thumb_bronto.jpg?3823635348305638436">
+        </a>
+    </div>
+    <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92047">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/ancient_world_thumb_buddhas.jpg?3823635348305638436">
+        </a>
+    </div>
+    <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=47222">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/into_the_wild_thumb_malbec.jpg?3823635348305638436">
+        </a>
+    </div>
+
+ <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=3558">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/country_road_trip_thumb_car_w_tree.jpg?3823635348305638436">
+        </a>
+    </div>
+    </div>
+<div class="grid-noGutter-noBottom">
+
+<div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92060">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/motherhood_thumb_papa_w_baby.jpg?3823635348305638436">
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=102">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/holiday_angels_thumb_brown_pair.jpg?3823635348305638436">
+        </a>
+    </div>
+
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=4020">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/nativities_thumb_mini_color.jpg?3823635348305638436">
+         
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92058">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/Tree_topper_thumb_brown_beauty.jpg?3823635348305638436">
+        
+        </a>
+    </div>
+    </div>
+
+    <div class="grid-noGutter-noBottom">
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=3508">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/Nutcracker_thumb_clara_and_prince.jpg?3823635348305638436">
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=195">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/frosty_festival_snowman_1.jpg?3823635348305638436">
+        </a>
+    </div>
+ <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=287">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/holiday_angels_thumb_brown_pair.jpg?3823635348305638436">
+         
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=93141">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/love_your_farmer_thumb_farmers.jpg?12705712709105052122">
+         
+        </a>
+    </div>
+    </div>
+    <div class="grid-noGutter-noBottom">
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92053">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/waldork__thumb_merlin.jpg?3823635348305638436">
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=125">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/make_believe_thumb_robot.jpg?3823635348305638436">
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=3902">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/childhood_magic_thumb_baby_on_leaf.jpg?3823635348305638436">
+        </a>
+    </div>
+
+        <div class="col">
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=168">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/woodland_fairies_thumb_daughter.jpg?3823635348305638436">
+        </a>
+    </div>
+</div>
+<div class="grid-noGutter-noBottom">
+
+        <div class="col"><center>
+      <a href="https://app.handshake.com/catalog/3-craftspring?taxonomy.Category%5B%5D=92052">
+          <img src="https://cdn.shopify.com/s/files/1/1280/2495/files/sale_thumb_bird_people.jpg?3823635348305638436">
+        </a></center>
+    </div>
+</div>
+
+
+</body>
+</html>
