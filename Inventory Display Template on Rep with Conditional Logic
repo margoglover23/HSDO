@@ -1,0 +1,5 @@
+//* replace the Inventory Display template with the below to use conditional logic to show an emoji based on stock quantity *//
+
+
+
+{% if line.stockUnit.shelfQty > 671 %}⭐️{% else %}{{ default }}{% /if %}
