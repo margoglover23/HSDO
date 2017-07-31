@@ -1,0 +1,44 @@
+*/ Insert the below into the apperance settings Javascript section of HSDO so the site will not break when
+there are NA items used in the hard coded categories/. https://handshakeeng.atlassian.net/browse/IMP-797 for context.
+
+You will need to edit the manufacturer object list, in rows 9-13 below, to include all the manufactures in the account. */
+
+
+ if (window.location.pathname.split("/").length === 2) {
+    var MANUFACTURERS = [
+        { 11526-2017-simply-sexy },
+        { id: 3409, name: "PK" },
+        { id: 3407, name: "PB" },
+        { id: 3411, name: "WE" },
+        { id: 3843, name: "PT" }
+    ];
+
+    function disableHiddenManufacturers () {
+        for (var i = 0; i < MANUFACTURERS.length; i += 1) {
+            var manf = MANUFACTURERS[i];
+            if (!hs.apps.store_front_catalog.manfCollection.findWhere({ name: manf.name })) {
+                var $el = $("#" + manf.name);
+                if ($el.length) {
+                    $el
+                        .css({ opacity: "0.6" })
+                        .find("a")
+                            .prop("href", "#")
+                            .on("click", function (ev) { ev.preventDefault(); });
+                }
+            }
+        }
+    }
+
+    function pollForCatalogLoad () {
+        if ($(".brand-nav > .container > .nav > .dropdown > .dropdown-menu li")
+                .text().trim() !== "Loading…" &&
+            $(".catalog-promos .span3").length
+        ) {
+            disableHiddenManufacturers();
+        } else {
+            setTimeout(pollForCatalogLoad, 100);
+        }
+    }
+
+    $(pollForCatalogLoad);
+} 
