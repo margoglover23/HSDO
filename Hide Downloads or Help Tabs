@@ -1,0 +1,5 @@
+//* insert the below code into the Javascript Apperance Settings if you want to hide the link/tab to the Help or Downloads 
+pages without actually unpublishing the pages themselves. To hide the Downloads page, use the exact code below. To hide the 
+Help page, change li:nth-child(2) to li:nth-child(3). *//
+
+$("ul.nav.pull-right.user-nav  li:nth-child(2)").hide();
