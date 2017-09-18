@@ -1,0 +1,15 @@
+//* insert the code below into apperance settings CSS to remove the SKU column from the HSDO buyer-facing catalog page *//
+
+<style>
+    
+    .item-table th:nth-child(2) { 
+        display:none; 
+        
+    } 
+      .item-table td:nth-child(2) { 
+        display:none; 
+        
+    } 
+      
+    
+</style>
