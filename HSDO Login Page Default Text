@@ -1,0 +1,109 @@
+{% extends "base.djhtml" %}
+
+{% block page_title %}Log in{% endblock %}
+
+{% block base_body_container_attributes %}
+    class="container storefront-signup-login"
+{% endblock %}
+
+{% block base_body_content_attributes %}
+    class="content"
+{% endblock %}
+
+{% block base_body_navbar %}{% endblock %}
+
+{% block base_notifications %}
+    {% if error_messages %}
+    <div class="alerts">
+         <div class="alert alert-block alert-error">
+            {% for msg in error_messages %}
+                <p>{{ msg }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+
+
+{% block base_body_content %}
+
+    {% include "storefront_company_name_logo_h1.djhtml" %}
+
+    <div class="row-fluid">
+        <div class="span6">
+{% if signup %}
+    <h3>You're invited!</h3>
+{% else %}
+    <h3>Welcome to our online ordering platform.</h3>
+{% endif %}
+<ul class="signup-points storefront">
+    {% if signup %}
+        {% if account_assets %}
+            {% if account_assets.companyName %}
+                <li>
+                    Join {{account_assets.companyName}}'s online ordering platform.
+                </li>
+            {% endif %}
+        {% else %}
+            {% if company.name %}
+                <li>
+                    Join {{company.name}}'s online ordering platform.
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    <li>
+        View our product catalog, place new orders,
+        and review your order history.
+    </li>
+    <li>
+        Receive email confirmations for your orders.
+    </li>
+    <li>
+        {% if account_assets %}
+            <a
+                href="{{STOREFRONT_BUYER_HELP_LINK}}"
+                target="_blank"
+            >Need help?</a>
+        {% else %}
+            {% if forExistingBuyer %}
+                Use your Handshake account to log in.
+                <a
+                    href="{{STOREFRONT_BUYER_HELP_LINK}}"
+                    target="_blank"
+                >Need help?</a>
+            {% else %}
+                Create a free Handshake account to shop online.
+                <a
+                    href="{{STOREFRONT_BUYER_HELP_LINK}}"
+                    target="_blank"
+                >Need help?</a>
+            {% endif %}
+        {% endif %}
+    </li>
+</ul>
+             
+                <a href="{% url 'buyer_request' %}">Request Access</a>
+          </li>
+        </div>
+        <div class="span6">
+            <div class="signup-login well">
+                <h4>
+                    {% include "powered_by_handshake_img.djhtml" %}
+                   Log in to your account
+                </h4>
+                <hr>
+                {% with loginButtonLabel="Log in" %}
+                    {% include "login_form.djhtml" %}
+                {% endwith %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block base_body_dependencies %}
+    <script src="{{ BB_STATIC_URL }}dist/handshake-signup.min.js"></script>
+{% endblock %}
+
+{% block base_footer %}{% endblock %}
