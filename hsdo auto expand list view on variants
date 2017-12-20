@@ -1,0 +1,25 @@
+//* paste the below into javascript apperance settings to make the list view auto exapnd in the general catalog view as well
+as in the item detail PDP view *//
+
+
+require(["views/item_variant_table", "underscore"], function (hs, _) {
+    var oldRender = hs.views.ItemVariantTable.prototype.render;
+    hs.views.ItemVariantTable.prototype.render = function() { 
+        oldRender.apply(this, arguments); 
+        _.delay(function () {
+            $(".modal .btn.lines-mode").click();
+        }, 500);  
+        return this;
+    };    
+});
+
+require(["views/item_variant_table", "underscore"], function (hs, _) {
+    var oldRender = hs.views.ItemVariantTable.prototype.render;
+    hs.views.ItemVariantTable.prototype.render = function() { 
+        oldRender.apply(this, arguments); 
+        _.delay(function () {
+            $(".table-bordered .btn.lines-mode").click();
+        }, 500);  
+        return this;
+    };    
+});
